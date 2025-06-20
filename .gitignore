@@ -8,3 +8,5 @@
 *.bbl
 *.blg
 *.synctex.gz
+dualrep/COMFORT/
+dualrep/.gitignore
