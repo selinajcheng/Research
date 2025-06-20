@@ -1,0 +1,276 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[margin = 1in]{geometry} % sets 1-inch margin on all sides
+
+%- Language and encoding
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{microtype}
+
+%- Bibliography-related
+\usepackage{cite}
+\bibliographystyle{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{csquotes}
+\usepackage{setspace}
+
+\usepackage{hyperref}
+\usepackage[nameinlink]{cleveref}
+
+\usepackage{titling}
+\usepackage{parskip}
+\usepackage{etoolbox}
+
+%- Fonts and headings
+\usepackage{helvet}
+\usepackage{titlesec}
+
+% Set all headings to sans serif font
+\titleformat{\section}[runin]
+  {\sffamily\bfseries} % font: sans-serif bold large
+  {\thesection.}{0.5em}{}[\quad] % 1em space after label; \quad space after title
+\titleformat{\subsection}{\fontfamily{lmss}\selectfont\medium\bfseries}{}{}{}[]
+\titleformat{\subsubsection}{\fontfamily{lmss}\selectfont\normalsize\bfseries}{}{}{}[]
+
+%— Paragraph spacing
+\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\setlength{\parindent}{18pt}
+
+\begin{document}
+\pagestyle{fancy} % Enable fancy headers/footers
+\fancyhf{} % Clear existing headers/footers
+\fancyfoot[C]{\thepage} % Add page numbers at the bottom center
+\renewcommand{\headrulewidth}{0pt} % Remove header rule (line)
+\singlespacing
+\vspace{1.0cm}
+
+\begin{spacing}{1.10}
+
+\section[Uttal - Map use and spatial cognition]{David H. Uttal (2000) - Seeing the big picture: map use and the development of spatial cognition \cite{Uttal2000Seeingthebigpicture}}
+\label{sec:Uttal 2000 Seeing the big picture}
+\leavevmode\par\noindent
+
+
+\section[DeLoache - Dual Representation]{Judy S. DeLoache (2000) - Dual Representation and Young Children’s Use of Scale Models \cite{DeLoache2000DualRepresentation}}
+\label{sec:DeLoache 2000 Dual Representation}
+\leavevmode\par\noindent
+
+
+% \section[Landau et al. - Spatial representation across species]{Barbara Landau et al. (2009) - Spatial representation across species: geometry, language, and maps}
+% \label{sec:Landau 2009 Spatial representation}
+% \leavevmode\par\noindent
+
+
+\section[DeLoache et al. - Shrinking Room]{Judy S. DeLoache et al. (1994) - The Credible Shrinking Room \cite{DeLoache1994TheCredibleShrinkingRoom}}
+\label{sec:DeLoache 1994 Shrinking Room}
+\leavevmode\par
+In this paper, DeLoache et al. describe the results of an experiment consisting of 4 trials. 32 2- to 3-year-old children were divided into two groups: 15 children in the symbolic condition and 17 in the non-symbolic condition. The children are tested on their ability to locate corresponding dolls (Terry) from small to large scaling from model to room and vice versa.
+\break
+
+The symbolic condition is where a standard model task is given, in which the young children are shown where the toy is hidden in the model and tasked to find it in the referent room.
+\break
+
+The non-symbolic condition is where the children are convinced by the experimenters that there exists a shrinking machine that can shrink a large room (and its constituents) into a small room and vice versa. As a result, there's no longer a need to relate the model to the room, as it is now the same room, following the shrinking machine story. Instead, this task is relegated to one primarily testing memory.
+
+\section[Zhang et al. - Do Vision-Language Models Represent Space and How?]{Zheyuan Zhang et al. (2025) - Do Vision-Language Models Represent Space and How? Evaluating Spatial Frame of Reference Under Ambiguities \cite{Zhang2025DoVLMs}}
+\label{sec:Zhang 2025 Spatial Comfort}
+\leavevmode\par
+The authors created a framework called the COnsistent Multilingual Frame Of Reference Test (COMFORT) to evaluate the spatial reasoning capabilities of VLMs under ambiguity. The framework consists of a dataset, tasks, and comprehensive metrics (especially those to measure robustness and consistency).
+
+I learned multiple different concepts through this paper, including what downstream tasks are (and versus upstream), robustness, and consistency.
+
+Upstream tasks are those that are at the stage of a pre-trained model that has holistic language understanding and generation abilities. Downstream, i.e., specific, tasks are then optimized for by taking the pre-trained model and finetuning. Downstream applications are exactly what they sound like: taking a model and using it in specific, directed applications. This method of pre-training then finetuning leads to better overall performance due to the large corpus of training data available for generalized models rather than specialized models upfront.
+
+Robustness defines how well the model can stand up to variations in input, including adversarial attacks.
+
+Consistency is whether the model can output the same answer for similar or semantically equivalent input, i.e., what amounts to the same question/task.
+
+The authors choose to investigate how VLMs perform under spatial reference ambiguities because in most languages (except those that use absolute frames of reference (FoR)), spatial expressions can mean different things depending on language (and cultural) conventions and context.
+
+\noindent The main question investigated is: "Do VLMs represent space, and how?" This question is further broken down into these questions:
+
+\begin{enumerate}
+    \item "Do VLMs encode spatial relations? If so, what underlying coordinate system do they use?" or more specifically:
+    \item "When presented with an ambiguous spatial expression, do VLMs follow conventions and exhibit specific preferred FoRs (and the coordinate transformation in relative FoRs) to resolve ambiguity?"
+    \item "How effectively can VLMs adopt different FoRs, when perspectives are explicitly specified to disambiguate spatial expressions paired with visual scenes?"
+\end{enumerate}
+
+In their study, the authors break their research question(s) down into 5 experiments answering 5 sub-questions that each examine sub-components of this question and provide greater insight.
+
+But first, a few definitions: The reference object is the relatum or ground, while the target object is the referent or figure, positioned relative to the reference object. Object hallucination happens when a model misperceives objects in a scene.
+
+\noindent There are 3 main types of FoRs:
+\begin{enumerate}
+    \item Absolute (cardinal directions) (least ambiguous)
+    \item Intrinsic (the origin is aligned with the relatum)
+    \item Relative (the origin is aligned with the viewer)
+    \begin{itemize}
+        \item Egocentric relative (camera POV)
+        \item Addressee-centered relative (a person's POV in COMFORT-CAR)
+    \end{itemize}
+\end{enumerate}
+
+\noindent The two datasets and their respective FoRs, each of which have a corresponding prompt:
+\begin{enumerate}
+    \item COMFORT-BALL
+    \begin{enumerate}
+        \item Camera egocentric perspective (cam)
+    \end{enumerate}
+    \begin{itemize}
+        \item Non-fronted relatum
+        \item Focus on ambiguity of varied relative FoR conventions 
+    \end{itemize}
+    \item COMFORT-CAR
+    \begin{enumerate}
+        \item No perspective specified (nop)
+        \item Camera egocentric perspective (cam)
+        \item Addressee perspective (add)
+        \item Relatum perspective (rel)
+    \end{enumerate}
+    \begin{itemize}
+        \item Fronted relatum
+        \item More explicit FoRs can be adopted due to the fronted relatum
+        \item Focus on how ambiguity in the reference system is solved
+    \end{itemize}
+\end{enumerate}
+
+\noindent Each of the 5 sub-questions were tested for in individual experiments:
+\begin{enumerate}
+    \item Do VLMs have a preferred coordinate transformation convention?
+    \item Do VLMs have a preferred FoR?
+    \item Can VLMs adopt different FoRs when perspectives are explicitly specified to disambiguate spatial expressions?
+    \item Are spatial representations in VLMs robust and consistent?
+    \item Do multilingual VLMs faithfully follow the preferences and conventions (associated with different languages) to select the FoR?
+\end{enumerate}
+
+There was also a note on how there is a known bias in language models for affirmative (positive) answers, so this was mitigated through normalization of the expected affirmative probability.
+
+English conventions include only intrinsic and relative FoRs, and a preference for the relative FoR and reflected coordinate transformation.
+
+\noindent 1. Do VLMs have a preferred coordinate transformation convention? (Table 2)
+\begin{itemize}
+    \item COMFORT-BALL dataset
+    \item Almost all models preferred the reflected coordinate transformation (except for BLIP-based models)
+\end{itemize}
+
+\noindent 2. Do VLMs have a preferred FoR? (Table 3)
+\begin{itemize}
+    \item COMFORT-CAR dataset (nop)
+    \item Preference for egocentric relative FoR (except BLIP-based models again)
+    \item Some more variation in performance in lateral vs sagittal axes
+\end{itemize}
+
+\noindent 3. Can VLMs adopt different FoRs when perspectives are explicitly specified to disambiguate spatial expressions? (Table 4, 9)
+\begin{itemize}
+    \item COMFORT-CAR dataset
+    \item One FoR specified for each prompt: cam/rel/add
+    \item Can comprehend scenes with egocentric relative FoR but not other FoRs 
+    \item Close-to-chance performance for all models when told to adapt to non-egocentric-relative FoRs
+    \item It is hypothesized that this inability to adopt explicitly specified non-egocentric FoRs exists because models have only been trained on 2D images, but none or less 3D data. In images, a reflected relative FoR is natural. As a result, 3D training is needed to adopt VLMs in the real world.
+\end{itemize}
+
+\noindent 4. Are spatial representations in VLMs robust and consistent? (Table 5)
+\begin{itemize}
+    \item BLIP-based models suffered from severe object hallucinations
+    \item There is a \emph{lack} of robustness and consistency in VLMs presently
+    \item The only two exceptions:
+    \begin{enumerate}
+        \item VLMs that have underwent supervised finetuning on spatial relation tasks
+        \item GLaMM, which was mechanistically grounded to objects, resulting in minimal object hallucination but did not translate to good spatial understanding
+    \end{enumerate}
+\end{itemize}
+
+\noindent 5. Do multilingual VLMs faithfully follow the preferences and conventions (associated with different languages) to select the FoR? (Table 10, Figure 8)
+\begin{itemize}
+    \item FoR preferences observed tend to all be relative despite some language conventions preferring \emph{OTHER} FoRs
+    \item English conventions dominate preference conventions in multilingual VLMs
+    \item "Training recipes for multilingual multimodal language models heavily rely on machine-translated captions" which "may lead to English conventions overshadowing those of other languages."
+    \begin{itemize}
+        \item This can be mitigated by "exposure to naturally generated multilingual data."
+    \end{itemize}
+\end{itemize}
+
+\noindent Questions I still have:
+\begin{enumerate}
+    \item What are grounded VLMs? (pg3)
+    \item What is spatial continuity? (pg3, right before section 3)
+    \item The math expressions and understanding the math in section 3.
+    \item What does Figure 6a mean?
+        It means that if two inputs are symmetric, there should be the same probability the model will say yes/no to the red ball being in front. 
+    \item If the experiments prior to the multilingual one (last question) were all done via English language prompting, shouldn't it be desired that VLMs exhibit English convention preference in these experiments? It should be to adhere to what the user's conventions likely are.
+        Yes, though the authors don't explicitly state that this is desirable. Their most important question/experiment is the one that showed inflexibility to adapting to non-egocentric relative FoRs, which is likely what they've most been trained with. As a result, there's a bias towards English conventions, however unintentionally.
+    \item How do I read Table 4?
+    \item What does normalizing the expected affirmative probability mean?
+        Ensuring that they can report true probability without confounding factors affecting it. It accounts for individual differences and isn't just done for VLMs but also people.
+    \item "Not better than 30 random trials"?
+    \item Wasn't it kind of obvious the VLMs finetuned for spatial relation tasks would be more robust/consistent than the base models?
+        Yes, but it's a result, so the authors are just reporting on it. Also, while its performance would obviously be more robust and consistent, the question often is whether anything in its performance would degrade as a tradeoff/consequence of this increase in performance in another aspect.
+    \item What is mechanistic grounding?
+    \item Are there more ways to avoid English conventions overshadowing other languages'?
+        Along with training with original multilingual data, balancing the training data is also a method. But otherwise, it's hard to mitigate any biases. The only way models get biases is through what they're trained on.
+\end{enumerate}
+
+\section[Dillon et al. - Core foundations of abstract geometry]{Moira R. Dillon et al. (2013) - Core foundations of abstract geometry \cite{Dillon2013abstractgeometry}}
+\label{sec:Dillon 2013 Abstract Geometry}
+\leavevmode\par
+
+Recommended by Eunice Yiu from UC Berkeley on 2025-06-13 to consider testing VLMs on simpler tasks even young children (age 4) can do.
+
+This paper assesses whether or not young children (age 4) integrate representations including distance and angle to navigate spaces using maps. The authors found no evidence of the aforementioned.
+
+When navigating, humans and animals represent their positions using the distances and directions of extended surfaces in the terrain, \emph{not} the angles at which surfaces meet.
+
+When encoding objects, humans and animals represent them using the angles and relative lengths of 3D part structures or 2D shapes, \emph{not} the absolute size or directional relations that may distinguish an object from a mirror image.
+
+Abstract geometric intuitions (which older humans can easily access and exhibit) require an integrated representation of distance and angle. This integrating ability doesn't begin to show until 6-10 years of age. It is still unclear how the ability emerges, but studying children's use of geometry in spatial symbols, e.g., maps, may provide insight on its development.
+
+A similar prior study \cite{Huang2013maps} used contiguous triangular arrays in tasks, but the authors here point out that any related tasks could have been solved without representing \emph{BOTH} distance/direction and relative length/angle.
+
+Previous studies found distinct distances from an array's center helpful. Studies with rhomboidal arrays displayed lower performance when only the corners were shown, despite distinct distances and angles in the setup.
+
+To control for the effects of age, verbal intelligence, and other spatial abilities, the authors seem to study these through non-symbolic tasks before the symbolic map tasks. In their analyses, they control for any variations. All children go through 2 visits, the first for the non-symbolic tasks, and the second for the symbolic tasks.
+
+Each of the two non-symbolic tasks were designed to engage the different representations involved when encoding positions (when navigating) and objects. Respectively, distances and directions, and angles and relative lengths.
+
+The first of the non-symbolic tasks was the navigation (or reorientation) task. There are 3 different rectangular environments with different aspect ratios. The children are disoriented and then allowed to reorient themselves using distance and directional relations to locate a hidden object (under a disk).
+
+The second of the non-symbolic tasks was the visual form analysis task. Each of the children were shown a succession of 16 visual arrays with 5 similar shapes and 1 deviant shape that differed in one or more of the following properties:
+\begin{itemize}
+    \item Proportional length
+    \item Angle size
+    \item Global shape
+    \item Relations of parallelism and alignment
+    \item Symmetry
+    \item Sense relations that would distinguish a form from its mirror image
+\end{itemize}
+
+The second visit included both 2 symbolic map tasks and a test of verbal intelligence.
+
+The main experimental setup involves purely geometric maps representing 2 fragmented 3D environments. There are 2 triangular arrays, one with corners removed (and resulting 3 sides of equal length), the other with corners only. Both triangular arrays are 30-60-90 triangles. These two configurations make it so that only either distance and directional relations or relative length and angle are available to guide map use. Either the triangular arrays were formed "by walls at distinct distances or by corners of distinct angles."
+
+The separation of these 2 tasks with corners and sides each in the referent is also to create 2 distinct tasks that elicit the use of core geometry to navigate environments and recognize objects. This tests whether young children can integrate distance and angle information in maps to help navigate a fractured environment.
+
+Let's talk about the results now that we've gotten the experimental design out of the way.
+
+\section[Dillon et al. - From Map Reading to Geometric Intuitions]{Moira R. Dillon et al. (2018) - From Map Reading to Geometric Intuitions \cite{Dillon2018FromMapReading}}
+\label{sec:Dillon 2018 From Map Reading to Geometric Intuitions}
+\leavevmode\par
+
+
+\section[Tang et al. - Grounding Language in Multi-Perspective Referential Communication]{Zineng Tang et al. (2024) - Grounding Language in Multi-Perspective Referential Communication \cite{Tang2024groundinglang}}
+\label{sec:Tang 2024 Grounding Language}
+\leavevmode\par\noindent
+Recommended during 2025-06-11 standup.
+
+\section[Xing et al. - Can Large Vision Language Models Read Maps Like a Human?]{Shuo Xing et al. (2025) - Can Large Vision Language Models Read Maps Like a Human?}
+
+
+\section[Google DeepMind - Aligning Machine and Human Visual Representations]{Google DeepMind (2024) - Aligning Machine and Human Visual Representations across Abstraction Levels}
+
+
+\bibliography{references}
+\end{spacing}
+\end{document}
