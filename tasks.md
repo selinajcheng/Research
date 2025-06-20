@@ -1,18 +1,20 @@
 # Tasks
 
-These are mostly backburner tasks.
+These are mostly backburner tasks I needed a place for.
 
 ## Notes
 - [ ] Transcribe and refine notes for the first 3 papers you read
     - Maybe reread them while you're at it, especially if you don't remember it well even after reading notes :/
 
 ## Admin
+- [ ] Number the notebook
+- [ ] Index the notebook
 - [ ] Get [Cursor for students](https://www.trycursor.com/en/students)
 - [ ] Get [GitHub Education](https://github.com/education)
 - [ ] Get [Claude for Education](https://www.anthropic.com/education)
 - [ ] Get [ChatGPT Plus discount for students](https://help.openai.com/en/articles/10968654-student-discounts-for-chatgpt-plus-us-canada)
 
-## Learning
+## Learning (on the side)
 ### Watching
 - [ ] Watch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
 - [ ] Finish Andrej Karpathy's [Deep Dive into LLMs like ChatGPT - YouTube](https://www.youtube.com/watch?v=7xTGNNLPyMI) (3.5 hr)
