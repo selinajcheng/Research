@@ -2,6 +2,18 @@
 
 These are mostly backburner tasks I needed a place for.
 
+## Now
+- [ ] Revisit standup (2025-06-24)
+- [ ] Start a progress Markdown file (good for getting perspective and documentation, which I like and feel that even the process of writing it is helpful)
+- [ ] Test 3 cases with 2.5-Flash and 2.5-Flash-Lite in [Google AI Studio](https://aistudio.google.com/prompts/new_chat)
+    - [ ] 2 cases on which Pro succeeded
+    - [ ] 1 case on which Pro failed
+    - This is to get a sense of how the Gemini series behaves with respect to each other
+- [ ] Clone [official project repo](https://github.com/lil-lab/dual-rep)
+    - [ ] Move to branch's demo file
+- [ ] Ask Claude to get started on Python scripting in Blender, relevant skills to and the triangle map task
+- [ ] Generate the triangle map tasks' 2 configurations
+
 ## Notes
 - [ ] Transcribe and refine notes for the first 3 papers you read
     - Maybe reread them while you're at it, especially if you don't remember it well even after reading notes :/
@@ -36,3 +48,5 @@ These are mostly backburner tasks I needed a place for.
     - [Video playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 - [ ] [Neural network series](https://www.3blue1brown.com/topics/neural-networks)
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
+
+## Archive
