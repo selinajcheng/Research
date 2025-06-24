@@ -9,8 +9,8 @@ These are mostly backburner tasks I needed a place for.
     - [ ] 2 cases on which Pro succeeded
     - [ ] 1 case on which Pro failed
     - This is to get a sense of how the Gemini series behaves with respect to each other
-- [ ] Clone [official project repo](https://github.com/lil-lab/dual-rep)
-    - [ ] Move to branch's demo file
+- [X] Clone [official project repo](https://github.com/lil-lab/dual-rep)
+    - [X] Move to branch's demo file
 - [ ] Ask Claude to get started on Python scripting in Blender, relevant skills to and the triangle map task
 - [ ] Generate the triangle map tasks' 2 configurations
 
