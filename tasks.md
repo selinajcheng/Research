@@ -6,8 +6,8 @@ These are mostly backburner tasks I needed a place for.
 - [ ] Test 3 cases with 2.5-Flash and 2.5-Flash-Lite in [Google AI Studio](https://aistudio.google.com/prompts/new_chat)
     - [X] 1 case on which Pro succeeded
     - [ ] Another case on which Pro succeeded
-          - [X] Prompt
-          - [ ] Read and record observations
+        - [X] Prompt
+        - [ ] Read and record observations
     - [ ] 1 case on which Pro failed
         - [ ] Prompt
         - [ ] Read and record observations
