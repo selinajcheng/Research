@@ -3,16 +3,21 @@
 These are mostly backburner tasks I needed a place for.
 
 ## Now
-- [ ] Revisit standup (2025-06-24)
-- [ ] Start a progress Markdown file (good for getting perspective and documentation, which I like and feel that even the process of writing it is helpful)
 - [ ] Test 3 cases with 2.5-Flash and 2.5-Flash-Lite in [Google AI Studio](https://aistudio.google.com/prompts/new_chat)
-    - [ ] 2 cases on which Pro succeeded
+    - [X] 1 case on which Pro succeeded
+    - [ ] Another case on which Pro succeeded
+          - [X] Prompt
+          - [ ] Read and record observations
     - [ ] 1 case on which Pro failed
+        - [ ] Prompt
+        - [ ] Read and record observations
     - This is to get a sense of how the Gemini series behaves with respect to each other
-- [X] Clone [official project repo](https://github.com/lil-lab/dual-rep)
-    - [X] Move to branch's demo file
 - [ ] Ask Claude to get started on Python scripting in Blender, relevant skills to and the triangle map task
 - [ ] Generate the triangle map tasks' 2 configurations
+- [ ] Start a progress Markdown file (good for getting perspective and documentation, which I like and feel that even the process of writing it is helpful)
+- [ ] Revisit standups
+    - [ ] 2025-06-11
+    - [ ] 2025-06-24
 
 ## Notes
 - [ ] Transcribe and refine notes for the first 3 papers you read
@@ -49,4 +54,7 @@ These are mostly backburner tasks I needed a place for.
 - [ ] [Neural network series](https://www.3blue1brown.com/topics/neural-networks)
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
-## Archive
+## Archive (shelved by dates done)
+### 2025-06-25
+- [X] Clone [official project repo](https://github.com/lil-lab/dual-rep)
+    - [X] Move to branch's demo file
