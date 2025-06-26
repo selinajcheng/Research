@@ -5,15 +5,23 @@ These are mostly backburner tasks I needed a place for.
 ## Now
 - [ ] Test 3 cases with 2.5-Flash and 2.5-Flash-Lite in [Google AI Studio](https://aistudio.google.com/prompts/new_chat)
     - [X] 1 case on which Pro succeeded
-    - [ ] Another case on which Pro succeeded
+    - [X] Another case on which Pro succeeded
+        - [X] Prompt
+        - [X] Read and record observations
+    - [ ] 1 case on which Pro failed
         - [X] Prompt
         - [ ] Read and record observations
-    - [ ] 1 case on which Pro failed
-        - [ ] Prompt
-        - [ ] Read and record observations
     - This is to get a sense of how the Gemini series behaves with respect to each other
-- [ ] Ask Claude to get started on Python scripting in Blender, relevant skills to and the triangle map task
-- [ ] Generate the triangle map tasks' 2 configurations
+- [ ] Work on creating the triangle map tasks' 2 configurations
+    - [ ] Ask AI to get started on Python scripting in Blender (must-knows)
+    - [ ] Ask AI to teach you the relevant knowledge needed to draw basic 3D geometric shapes
+    - [ ] Ask AI to teach you how to draw 3 walls
+    - [ ] Ask AI to teach you how to draw 3 walls that make a triangle
+        - [ ] Equilateral
+        - [ ] Custom angles (35-60-85)
+    - [ ] Ask AI to teach you how to draw 2 walls that form a corner
+    - [ ] Then ask for a custom angled corner
+    - [ ] Ask AI how to place vertices at specific coordinates
 - [ ] Start a progress Markdown file (good for getting perspective and documentation, which I like and feel that even the process of writing it is helpful)
 - [ ] Revisit standups
     - [ ] 2025-06-11
@@ -24,7 +32,6 @@ These are mostly backburner tasks I needed a place for.
     - Maybe reread them while you're at it, especially if you don't remember it well even after reading notes :/
 
 ## Admin
-- [ ] Number the notebook
 - [ ] Index the notebook
 - [ ] Get [Cursor for students](https://www.trycursor.com/en/students)
 - [ ] Get [GitHub Education](https://github.com/education)
@@ -58,3 +65,5 @@ These are mostly backburner tasks I needed a place for.
 ### 2025-06-25
 - [X] Clone [official project repo](https://github.com/lil-lab/dual-rep)
     - [X] Move to branch's demo file
+### Unknown
+- [X] Number the notebook
