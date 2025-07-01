@@ -1,6 +1,6 @@
-# Tasks
+# Tasks and Progress
 
-These are mostly backburner tasks I needed a place for.
+These are mostly backburner tasks I needed a place for. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now
 - [ ] Continue working on recreating the triangle map tasks
@@ -36,6 +36,7 @@ These are mostly backburner tasks I needed a place for.
 - [ ] Grant Sanderson's (3B1B) [Linear Algebra series](https://www.3blue1brown.com/topics/linear-algebra)
     - Contains articles and companion videos
     - [Video playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
+- [ ] Work through [The 10,000 foot view - Introduction to Scientific Visualization with Blender](https://surf-visualization.github.io/blender-course/api/10000_foot_view/)
 
 ### Reading
 - [ ] Read [Vaswani et al. 2017 Attention is All You Need](https://dl.acm.org/doi/10.5555/3295222.3295349)
@@ -48,7 +49,7 @@ These are mostly backburner tasks I needed a place for.
 - [ ] [Neural network series](https://www.3blue1brown.com/topics/neural-networks)
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
-## Archive (shelved by dates done; reverse-chronological)
+## Archive and Progress (shelved by dates done; reverse-chronological)
 ### 2025-07-01
 - [ ] Work on creating the triangle map tasks' 2 configurations
     - [X] Ask AI to get started on Python scripting in Blender (must-knows)
