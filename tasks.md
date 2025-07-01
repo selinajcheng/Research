@@ -60,6 +60,7 @@ These are mostly backburner tasks I needed a place for.
     - [ ] Ask AI to teach you how to draw 2 walls that form a corner
     - [ ] Then ask for a custom angled corner
     - [ ] Ask AI how to place vertices at specific coordinates
+
 Instead of AI, I ended up learning much of this through [Geometry, colors and materials - Introduction to Scientific Visualization with Blender](https://surf-visualization.github.io/blender-course/advanced/python_scripting/3_geometry_colors_and_materials/) and experimenting using the base code from there. This is obviously the more "old-fashioned" way and while it may have been more efficient to ask genAI, I believe the code I have as a result of *not* doing that is more clean, which is just as valuable.
 
 ### 2025-06-26
