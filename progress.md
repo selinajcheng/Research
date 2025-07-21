@@ -8,6 +8,7 @@ I'm on the data generation and collection phase of the project. Hoping to have r
 - [ ] Work on the first draft of the poster
     - [ ] Figure out a good flow of sections
     - [ ] Write the sections below
+    - [ ] Abstract
     - [ ] Results
     - [ ] Why This Matters
     - [ ] Work on visuals
