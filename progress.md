@@ -8,6 +8,9 @@ I'm on the data generation and collection phase of the project. Hoping to have r
 - [ ] Work on the first draft of the poster
     - [ ] Figure out a good flow of sections
     - [ ] Write the sections below
+    - [ ] Results
+    - [ ] Why This Matters
+    - [ ] Work on visuals
 - [ ] Rewrite the prompt (so it's clear that you're *not* looking for a green object in image 2 but the *location*)
     - e.g., "Which of the following locations best match the location of the green object in image 1? Choose either 1, 2, 3, or 'not shown in image' as the location. Provide your answer in the following format: 'Location: [choice]\nExplanation: [explanation]\n"
 - [ ] Polish the API/model calling script to:
@@ -88,6 +91,10 @@ I'm on the data generation and collection phase of the project. Hoping to have r
 ### 2025-07-21 (Monday)
 - [X] Write prompt (4 choices, 3 numbers or not shown in the image)
 - [X] Manually add 3 numbers (1,2,3) to 12 POV shots
+- [X] Add affiliation logos
+    - [X] Cornell Tech logo
+    - [X] Macaulay Honors College logo
+    - [X] Hunter Logo
 
 ### 2025-07-19 (Saturday)
 - [X] Watch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
