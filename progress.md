@@ -61,7 +61,7 @@ I'm on the data generation and collection phase of the project. Hoping to have r
 
 ## Learning (on the side)
 ### Watching
-- [ ] Watch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
+- [ ] Rewatch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
 - [ ] Finish Andrej Karpathy's [Deep Dive into LLMs like ChatGPT - YouTube](https://www.youtube.com/watch?v=7xTGNNLPyMI) (3.5 hr)
 - [ ] Watch [Andrej Karpathy: Software Is Changing (Again) - YouTube](https://www.youtube.com/watch?v=LCEmiRjPEtQ) (0.6 hr)
 
@@ -89,7 +89,10 @@ I'm on the data generation and collection phase of the project. Hoping to have r
 - [X] Write prompt (4 choices, 3 numbers or not shown in the image)
 - [X] Manually add 3 numbers (1,2,3) to 12 POV shots
 
-### Post Tuesday standup cancelled (2025-07-15 to 2025-07-25)
+### 2025-07-19 (Saturday)
+- [X] Watch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
+
+### Post Tuesday standup cancelled (2025-07-15 to 2025-07-18)
 - [X] Add white material to walls (should show when rendering)
 - [X] Add green material to object (should show when rendering overhead)
 - [X] Fix the script to render first-person shots (12 angles and therefore 12 camera coords?)
