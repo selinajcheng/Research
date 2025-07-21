@@ -3,32 +3,41 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now
-I'm on the data generation and collection phase of the project. Hoping to have preliminary results for one setup tomorrow morning at standup.
+I'm on the data generation and collection phase of the project. Hoping to have results for the complete, sides, and corners setup POV renders paired with at least 1 object location (3 corresponding overhead renders dep. on the setup) by Wednesday noon, which is when I'll have to submit the poster. 
 
-- [ ] Add white material to walls (should show when rendering)
-- [ ] Add green material to object (should show when rendering overhead)
-- [ ] Fix the script to render first-person shots (12 angles and therefore 12 camera coords?)
-    - [ ] Make the naming of the rendered images unique, e.g., x-, y-, z-coordinates of the camera and the angle from which the shot was taken
-    - Should make it so that it's as if you're standing inside the set up and looking down at it from an angle (you're bending your head), you're walking in a circle around a center point, stopping every 30 degrees and taking a photo directed at the center point.
+- [ ] Work on the first draft of the poster
+    - [ ] Figure out a good flow of sections
+    - [ ] Write the sections below
+- [ ] Rewrite the prompt (so it's clear that you're *not* looking for a green object in image 2 but the *location*)
+    - e.g., "Which of the following locations best match the location of the green object in image 1? Choose either 1, 2, 3, or 'not shown in image' as the location. Provide your answer in the following format: 'Location: [choice]\nExplanation: [explanation]\n"
+- [ ] Polish the API/model calling script to:
+    - [X] Load two images
+        - [ ] Ask genAI why you'd upload the first photo and prepare the second image as inline data instead
+    - [X] Call the model with the prompt
+    - [ ] Save all responses *and* reasoning to a file (.json)
+    - [ ] Automate pairing of overhead and 
+- [ ] Run the experiment and get findings
+    - Call Gemini-2.5 Flash and Flash-Lite on one setup
+        - [ ] 1 (90 deg, complete)
+        - [ ] 2 (90 deg, sides)
+        - [ ] 3 (90 deg, corners)
+    - Manually calculate the accuracy by correct out of 12 (pairs of same map and different POV shot) for both models
+        - [ ] 1 (90 deg, complete)
+        - [ ] 2 (90 deg, sides)
+        - [ ] 3 (90 deg, corners)
+- [ ] Add findings to the poster
+
+### On My Mind
+- [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
+- [ ] Get started on the slides
+
+### *Backburner*
 - [ ] Make coordinates precise on the hypotenuse side
     - [ ] corners.py 60 deg
     - [ ] corners.py 30 deg
     - [ ] sides.py 60 deg
     - [ ] sides.py 30 deg
     - [ ] Re-render
-- [ ] Manually add 3 numbers (1,2,3) to 12 POV shots
-- [ ] Write prompt (4 choices, 3 numbers or not shown in the image)
-- [ ] Set up API/model calling script to:
-    - [ ] Load two images
-        - [ ] Ask genAI why you'd upload the first photo and prepare the second image as inline data instead
-    - [ ] Call the model with the prompt
-    - [ ] Save all responses *and* reasoning to a file (.json)
-- [ ] Call Gemini-2.5 Flash and Flash-Lite on one setup (90 deg, complete)
-- [ ] Manually calculate the accuracy by correct out of 12 (pairs of same map and different POV shot) for both models
-- [ ] Write standup slide
-
-### *After* 15:00 on Tuesday (2025-07-15)
-- [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
 - [ ] Read through your codebase and make sure you understand every line.
 - [ ] Look through the Structured 3D dataset using the command `cd /share/lil/aw588/data/zips`
 - [ ] Read about the Structured 3D dataset's corresponding research
@@ -76,10 +85,22 @@ I'm on the data generation and collection phase of the project. Hoping to have p
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-07-21 (Monday)
+- [X] Write prompt (4 choices, 3 numbers or not shown in the image)
+- [X] Manually add 3 numbers (1,2,3) to 12 POV shots
+
+### Post Tuesday standup cancelled (2025-07-15 to 2025-07-25)
+- [X] Add white material to walls (should show when rendering)
+- [X] Add green material to object (should show when rendering overhead)
+- [X] Fix the script to render first-person shots (12 angles and therefore 12 camera coords?)
+    - [X] Make the naming of the rendered images unique, e.g., x-, y-, z-coordinates of the camera and the angle from which the shot was taken
+    - Should make it so that it's as if you're standing inside the set up and looking down at it from an angle (you're bending your head), you're walking in a circle around a center point, stopping every 30 degrees and taking a photo directed at the center point.
+
 ### 2025-07-14
 - [X] Determine coordinates for objects (did so imprecisely)
 - [X] Get [Cursor for students](https://www.trycursor.com/en/students)
 - [X] Retroactively record progress
+- [X] Finish rendering script for overhead shots
 
 ### Gap (did not record progress during this time)
 - [X] Continue working on recreating the triangle map tasks
