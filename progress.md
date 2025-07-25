@@ -2,26 +2,20 @@
 
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
-## Now
-I'm on the data generation and collection phase of the project. Hoping to have results for the complete, sides, and corners setup POV renders paired with at least 1 object location (3 corresponding overhead renders dep. on the setup) by Wednesday noon, which is when I'll have to submit the poster. 
+## Now (check this everyday)
+### Getting Results
+I'm on the "getting results"/experiment phase of the project. Need to have results for the complete, sides, and corners setup POV renders paired with at least 1 object location (3 corresponding overhead renders dep. on the setup) by the end of Monday, so I can fully rehearse Monday night and Tuesday workday. 
 
-- [ ] Work on the first draft of the poster
-    - [ ] Figure out a good flow of sections
-    - [ ] Write the sections below
-    - [ ] Abstract
-    - [ ] Results
-    - [ ] Why This Matters
-    - [ ] Work on visuals
-- [ ] Rewrite the prompt (so it's clear that you're *not* looking for a green object in image 2 but the *location*)
-    - e.g., "Which of the following locations best match the location of the green object in image 1? Choose either 1, 2, 3, or 'not shown in image' as the location. Provide your answer in the following format: 'Location: [choice]\nExplanation: [explanation]\n"
+- [ ] Test out rewriting the prompt and seeing what elicits the best response
+    - So it's clear that you're *not* looking for a green object in image 2 but the *location*, e.g., "Which of the following locations best match the location of the green object in image 1? Choose either 1, 2, 3, or 'not shown in image' as the location. Provide your answer in the following format: 'Location: [choice]\nExplanation: [explanation]\n"
 - [ ] Polish the API/model calling script to:
     - [X] Load two images
-        - [ ] Ask genAI why you'd upload the first photo and prepare the second image as inline data instead
+        <!-- - [ ] Ask genAI why you'd upload the first photo and prepare the second image as inline data instead -->
     - [X] Call the model with the prompt
     - [ ] Save all responses *and* reasoning to a file (.json)
-    - [ ] Automate pairing of overhead and 
+    - [ ] (optional?) Automate pairing of overhead and pov renders
 - [ ] Run the experiment and get findings
-    - Call Gemini-2.5 Flash and Flash-Lite on one setup
+    - Call InternLM XComposer-2-7B on one setup
         - [ ] 1 (90 deg, complete)
         - [ ] 2 (90 deg, sides)
         - [ ] 3 (90 deg, corners)
@@ -29,11 +23,26 @@ I'm on the data generation and collection phase of the project. Hoping to have r
         - [ ] 1 (90 deg, complete)
         - [ ] 2 (90 deg, sides)
         - [ ] 3 (90 deg, corners)
-- [ ] Add findings to the poster
+- [ ] Add findings to:
+    - [ ] Slides
+    - [ ] A4 sheet of paper (for the poster 💀💀💀)
 
-### On My Mind
+### More to do throughout the next week before the symposium
+I also need to work on the slides throughout all of this time so I have a good number of days (at least 5) between when I start preparing and present. I want to finish all slides besides the findings for the triangle map task by Saturday night so I can start rehearsing on Sunday. I'll finish the slides and send it to Anne on Monday (don't want to send over the weekend; wrong implicit impression).
+
+- [ ] Take care of the oral slideshow presentation
+    - [ ] Create the first fullest draft you can make
+    - [ ] Practice presenting it and talking freely about your work
+    - [ ] Iterate slideshow based on practice
+    - [ ] Rehearse by yourself at the venue
+    - [ ] Rehearse in front of others at the venue
+    - [ ] Have fun!
+
+Also:
+- [ ] Get the QR landing page (beacons.ai/selinajcheng) ready by adding the:
+    - [ ] Link to slideshow presentation
+    - [ ] Link to Github
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
-- [ ] Get started on the slides
 
 ### *Backburner*
 - [ ] Make coordinates precise on the hypotenuse side
@@ -88,7 +97,26 @@ I'm on the data generation and collection phase of the project. Hoping to have r
 - [ ] [Neural network series](https://www.3blue1brown.com/topics/neural-networks)
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
-## Archive and Progress (shelved by dates done; reverse-chronological)
+## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-07-24 (Thursday)
+- Worked with Anne on setting up InternLM XComposer-2-7B locally since Gemini API credits expired ;-;
+
+### 2025-07-23 (Wednesday)
+- [X] Submit poster. Wrote the following sections:
+    - [X] Motivation and Problem
+    - [X] Our Approach
+    - [X] Experiment
+    - [X] Results
+    - [X] Why This Matters/Impact
+    - [X] Future Work
+- [X] Work on visuals
+
+### 2025-07-22 (Tuesday)
+- [X] Work on the first draft of the poster
+    - [X] Figure out a good flow of sections
+    - [X] Write the sections as tasks
+- [X] Abstract
+
 ### 2025-07-21 (Monday)
 - [X] Write prompt (4 choices, 3 numbers or not shown in the image)
 - [X] Manually add 3 numbers (1,2,3) to 12 POV shots
@@ -96,6 +124,7 @@ I'm on the data generation and collection phase of the project. Hoping to have r
     - [X] Cornell Tech logo
     - [X] Macaulay Honors College logo
     - [X] Hunter Logo
+- Finished data generation/collection
 
 ### 2025-07-19 (Saturday)
 - [X] Watch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
