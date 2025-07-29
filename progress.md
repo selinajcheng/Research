@@ -15,9 +15,7 @@ I'm on the "getting results"/experiment phase of the project. I could practicall
 #### For Eunice
 - [ ] Write some slides (practice for the symposium of sorts to get a better sense of what I've done since meeting Eunice, which is helpful)
 
-### More to do throughout the next week before the symposium
-I also need to work on the slides throughout all of this time so I have a good number of days (at least 5) between when I start preparing and present. I want to finish all slides besides the findings for the triangle map task by Saturday night so I can start rehearsing on Sunday. I'll finish the slides and send it to Anne on Monday (don't want to send over the weekend; wrong implicit impression).
-
+### More to do before the symposium
 - [ ] Take care of the oral slideshow presentation
     - [ ] Create the first fullest draft you can make
     - [ ] Practice presenting it and talking freely about your work
