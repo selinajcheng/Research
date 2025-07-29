@@ -4,28 +4,16 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 
 ## Now (check this everyday)
 ### Getting Results
-I'm on the "getting results"/experiment phase of the project. Need to have results for the complete, sides, and corners setup POV renders paired with at least 1 object location (3 corresponding overhead renders dep. on the setup) by the end of Monday, so I can fully rehearse Monday night and Tuesday workday. 
+I'm on the "getting results"/experiment phase of the project. I could practically skip for joy right now.
 
-- [ ] Test out rewriting the prompt and seeing what elicits the best response
-    - So it's clear that you're *not* looking for a green object in image 2 but the *location*, e.g., "Which of the following locations best match the location of the green object in image 1? Choose either 1, 2, 3, or 'not shown in image' as the location. Provide your answer in the following format: 'Location: [choice]\nExplanation: [explanation]\n"
-- [ ] Polish the API/model calling script to:
-    - [X] Load two images
-        <!-- - [ ] Ask genAI why you'd upload the first photo and prepare the second image as inline data instead -->
-    - [X] Call the model with the prompt
-    - [ ] Save all responses *and* reasoning to a file (.json)
-    - [ ] (optional?) Automate pairing of overhead and pov renders
 - [ ] Run the experiment and get findings
-    - Call InternLM XComposer-2-7B on one setup
-        - [ ] 1 (90 deg, complete)
-        - [ ] 2 (90 deg, sides)
-        - [ ] 3 (90 deg, corners)
-    - Manually calculate the accuracy by correct out of 12 (pairs of same map and different POV shot) for both models
-        - [ ] 1 (90 deg, complete)
-        - [ ] 2 (90 deg, sides)
-        - [ ] 3 (90 deg, corners)
+    - Call InternLM XComposer-2d5-7B (recommended for complex visual tasks)
 - [ ] Add findings to:
     - [ ] Slides
     - [ ] A4 sheet of paper (for the poster 💀💀💀)
+
+#### For Eunice
+- [ ] Write some slides (practice for the symposium of sorts to get a better sense of what I've done since meeting Eunice, which is helpful)
 
 ### More to do throughout the next week before the symposium
 I also need to work on the slides throughout all of this time so I have a good number of days (at least 5) between when I start preparing and present. I want to finish all slides besides the findings for the triangle map task by Saturday night so I can start rehearsing on Sunday. I'll finish the slides and send it to Anne on Monday (don't want to send over the weekend; wrong implicit impression).
@@ -98,6 +86,31 @@ Also:
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-07-29 (Tuesday)
+- [X] Label corner renders
+- [X] Label side renders
+- Ready to run the experiment thereafter
+- [X] Automate evaluation computation, i.e., calculating accuracy (quantitative results)
+    - [X] Ground truth dictionary
+    - [X] Check the ground truth dictionary for every `.json` file under `./results/internlm` for the specifc pairing of "obj_{i}" and "{angle}" with the value {location} and assign a 1 if found and 0 if not found
+        - [X] Think through the specifics 
+    - [X] Calculate out of 12 for every 12 `.json` files
+    - [X] Save score out of 12 and percentage for that object-render pairing
+    - [X] Add score to the setup's score
+    - [X] Restart the count (0/12)
+    - [X] After obj_6 and angle 330, calculate and save setup's score out of 72 and the percentage
+    - Basically this same workflow's results except more refined in the code
+
+### 2025-07-28 (Monday)
+- [X] Test out rewriting the prompt and seeing what elicits the best response
+    - So it's clear that you're *not* looking for a green object in image 2 but the *location*, e.g., "Which of the following locations best match the location of the green object in image 1? Choose either 1, 2, 3, or 'not shown in image' as the location. Provide your answer in the following format: 'Location: [choice]\nExplanation: [explanation]\n"
+- [X] Polish the API/model calling script to:
+    - [X] Load two images
+        <!-- - [ ] Ask genAI why you'd upload the first photo and prepare the second image as inline data instead -->
+    - [X] Call the model with the prompt
+    - [X] Save all responses *and* reasoning to a file (.json) (for qualitative results)
+    - [X] Automate pairing of overhead and pov renders
+
 ### 2025-07-24 (Thursday)
 - Worked with Anne on setting up InternLM XComposer-2-7B locally since Gemini API credits expired ;-;
 
