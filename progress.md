@@ -3,31 +3,17 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-### Getting Results
-I'm on the "getting results"/experiment phase of the project. I could practically skip for joy right now.
-
-- [ ] Run the experiment and get findings
-    - Call InternLM XComposer-2d5-7B (recommended for complex visual tasks)
-- [ ] Add findings to:
-    - [ ] Slides
-    - [ ] A4 sheet of paper (for the poster 💀💀💀)
-
-#### For Eunice
-- [ ] Write some slides (practice for the symposium of sorts to get a better sense of what I've done since meeting Eunice, which is helpful)
-
-### More to do before the symposium
-- [ ] Take care of the oral slideshow presentation
-    - [ ] Create the first fullest draft you can make
-    - [ ] Practice presenting it and talking freely about your work
-    - [ ] Iterate slideshow based on practice
-    - [ ] Rehearse by yourself at the venue
-    - [ ] Rehearse in front of others at the venue
-    - [ ] Have fun!
-
-Also:
-- [ ] Get the QR landing page (beacons.ai/selinajcheng) ready by adding the:
-    - [ ] Link to slideshow presentation
-    - [ ] Link to Github
+- [ ] Test triangle map task 2.0 on Gemini-2.5 Flash
+    - [ ] Write the script to test with 12 images
+        - [ ] One setup
+        - [ ] Second setup
+        - [ ] Automate
+    - [ ] (do this first) Write the script to test with 3 images
+        - If we're not including the "not shown in image" choice, this should naturally correspond to a smaller number of data pairs. Each object would only be paired with 3 renders, giving us 18 pairs across each setup, which gives us 54 pairs/data points in total.
+        - [ ] One setup
+        - [ ] Second setup
+        - [ ] Third setup
+        - [ ] Automate
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
 
 ### *Backburner*
@@ -47,6 +33,7 @@ Also:
     - [ ] 2025-06-24
     - [ ] 2025-07-01
     - [ ] 2025-07-08
+    - [ ] 2025-08-05
 
 ## Notes
 - [ ] Transcribe and refine notes for the first 3 papers you read
@@ -84,6 +71,22 @@ Also:
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-08-05 (Tuesday)
+- Scrapped Gemini API script to test the same triangle map task 1.0 (pair 1 map and 1 render) on Gemini-2.5 Flash and Pro
+    - Feedback from standup got me to where I'd have gone in the first place,
+
+### 2025-07-31 (Thursday) (CUNY Honors Connect @Cornell Tech SROP Symposium!)
+- [X] Finalized slides for symposium
+- [X] Get the QR landing page (beacons.ai/selinajcheng) ready by adding the:
+    - [X] Link to slideshow presentation
+    - [ ] Link to Github
+
+### 2025-07-30 (Wednesday)
+- [X] Write up slides for symposium
+- [X] Add findings to:
+    - [X] Slides
+    - [ ] A4 sheet of paper (for the poster 💀💀💀)
+
 ### 2025-07-29 (Tuesday)
 - [X] Label corner renders
 - [X] Label side renders
@@ -98,6 +101,11 @@ Also:
     - [X] Restart the count (0/12)
     - [X] After obj_6 and angle 330, calculate and save setup's score out of 72 and the percentage
     - Basically this same workflow's results except more refined in the code
+- [X] Run the experiment and get findings
+    - Call InternLM XComposer-2d5-7B (recommended for complex visual tasks)
+    - First results:
+        - Total,5/72,6.9,10/70,14.3,4/69,5.8
+    - Had to run again because of error in code for saving data to .csv
 
 ### 2025-07-28 (Monday)
 - [X] Test out rewriting the prompt and seeing what elicits the best response
