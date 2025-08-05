@@ -17,6 +17,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
 
 ### *Backburner*
+- [ ] Merge with main? When?
 - [ ] Make coordinates precise on the hypotenuse side
     - [ ] corners.py 60 deg
     - [ ] corners.py 30 deg
