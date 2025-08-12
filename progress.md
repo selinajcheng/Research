@@ -17,7 +17,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
     - [ ] Select 3 pairs with increasing and varied difficult (easy, medium, hard)
     - [ ] 3 pairs with dynamic thinking
     - [ ] 3 pairs without dynamic thinking (and with max budget)
-- [ ] Test omitting the sentence that makes the 
+- [ ] Test omitting the sentence that makes it clear that the first-person POVs can overlap, and therefore, the same numbers represent the same location and unique numbers represent different locations
 - [ ] Edit the script to test with 12 images
 - [ ] Test 5 of the hardest cases with Gemini-2.5 Pro
 
@@ -222,4 +222,5 @@ Instead of AI, I ended up learning much of this through [Geometry, colors and ma
     - [X] Move to branch's demo file
 
 ### Unknown
+
 - [X] Number the notebook
