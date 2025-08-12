@@ -3,20 +3,26 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-- [ ] Test triangle map task 2.0 on Gemini-2.5 Flash
-    - [ ] Write the script to test with 12 images
-        - [ ] One setup
-        - [ ] Second setup
-        - [ ] Automate
-    - [ ] (do this first) Write the script to test with 3 images
-        - If we're not including the "not shown in image" choice, this should naturally correspond to a smaller number of data pairs. Each object would only be paired with 3 renders, giving us 18 pairs across each setup, which gives us 54 pairs/data points in total.
-        - [ ] One setup
-        - [ ] Second setup
-        - [ ] Third setup
-        - [ ] Automate
-- [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
+- [X] Reverse the order of answering (switch location with explanation)
+- [X] Document the different prompts used
+- [ ] Finish adding overlapping locations to the sides and complete setups
+- [ ] Post-process (crop) the map renders using Python's `matplotlib` library
+- [ ] Incorporate thinking into the script
+    - [ ] Enabling thinking
+    - [ ] Saving thinking (thought summaries) to a `.json` file
+- [ ] Implement automatic evaluation
+    - [ ] Incoporate parsing multi-line explanations
+- [ ] Test with Gemini-2.5 Flash for a few calls (probably 10-15 as a final test) to make sure the script works well
+- [ ] Test with Gemini-2.5 Pro
+    - [ ] Select 3 pairs with increasing and varied difficult (easy, medium, hard)
+    - [ ] 3 pairs with dynamic thinking
+    - [ ] 3 pairs without dynamic thinking (and with max budget)
+- [ ] Test omitting the sentence that makes the 
+- [ ] Edit the script to test with 12 images
+- [ ] Test 5 of the hardest cases with Gemini-2.5 Pro
 
 ### *Backburner*
+- [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
 - [ ] Merge with main? When?
 - [ ] Make coordinates precise on the hypotenuse side
     - [ ] corners.py 60 deg
@@ -27,6 +33,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] Read through your codebase and make sure you understand every line.
 - [ ] Look through the Structured 3D dataset using the command `cd /share/lil/aw588/data/zips`
 - [ ] Read about the Structured 3D dataset's corresponding research
+- [ ] Edit the Blender script to crop map renders going forward.
 
 ## Revisit
 - [ ] Revisit standups
@@ -51,6 +58,8 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] Rewatch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
 - [ ] Finish Andrej Karpathy's [Deep Dive into LLMs like ChatGPT - YouTube](https://www.youtube.com/watch?v=7xTGNNLPyMI) (3.5 hr)
 - [ ] Watch [Andrej Karpathy: Software Is Changing (Again) - YouTube](https://www.youtube.com/watch?v=LCEmiRjPEtQ) (0.6 hr)
+- [ ] Fei-Fei Li on spatial intelligence/reasoning [here](https://x.com/drfeifei/status/1790811274684584257?lang=fr)
+- [ ] Fei-Fei Li's [talk at NeurIPS 2024](https://neurips.cc/virtual/2024/invited-talk/101127)
 
 ### Courses
 - [ ] MIT's [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
@@ -64,6 +73,10 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] Read [Vaswani et al. 2017 Attention is All You Need](https://dl.acm.org/doi/10.5555/3295222.3295349)
 - [ ] Read [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/), which is about Attention is All You Need (AIAYN)
     - [ ] Reread AIAYN thereafter
+- [ ] Andrej Karpathy's [blog](https://karpathy.bearblog.dev/blog/)
+    - [ ] His [advice](https://cs.stanford.edu/people/karpathy/advice.html) for younger students
+    - [ ] His [survival guide to a PhD](https://karpathy.github.io/2016/09/07/phd/)
+- [ ] Fei-Fei Li's [slides for ICCV 2009](https://people.csail.mit.edu/torralba/shortCourseRLOC/slides/ICCV2009_intro.pdf)
 
 ### Tangential 3B1B
 - [ ] Grant Sanderson's (3B1B) [Calculus series](https://www.3blue1brown.com/topics/calculus)
@@ -72,6 +85,13 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-08-10 (Sunday)
+- **Lesson learned**: make sure you've saved everything and at least commit before exiting your tmux session *safely*. Do not have the same instance occur in which your SSH session terminates and you can no longer save your work. Spend a few seconds and save 45 minutes' worth of hassle and stress.
+
+### 2025-08-07 (Thursday)
+- **To be kept in mind for the future if doing human studies**: Need to account for the possibility of simply "getting better at the game" through familiarity.
+- Tested Gemini-2.5 Flash on the modified corners setup renders; next steps seem to logically be refining, testing to verify, then testing on the upper bound (Gemini-2.5 Pro)
+
 ### 2025-08-05 (Tuesday)
 - Scrapped Gemini API script to test the same triangle map task 1.0 (pair 1 map and 1 render) on Gemini-2.5 Flash and Pro
     - Feedback from standup got me to where I'd have gone in the first place,
