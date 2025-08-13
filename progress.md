@@ -5,8 +5,8 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 ## Now (check this everyday)
 - [X] Reverse the order of answering (switch location with explanation)
 - [X] Document the different prompts used
-- [ ] Finish adding overlapping locations to the sides and complete setups
-- [ ] Post-process (crop) the map renders using Python's `matplotlib` library
+- [X] Finish adding overlapping locations to the sides and complete setups
+- [X] Post-process (crop) the map renders using Python's `matplotlib` library
 - [ ] Incorporate thinking into the script
     - [ ] Enabling thinking
     - [ ] Saving thinking (thought summaries) to a `.json` file
@@ -23,6 +23,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 
 ### *Backburner*
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
+- [ ] Add overlapping locations to POV renders 7-12 (angle 210 and onwards)
 - [ ] Merge with main? When?
 - [ ] Make coordinates precise on the hypotenuse side
     - [ ] corners.py 60 deg
