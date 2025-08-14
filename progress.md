@@ -3,10 +3,6 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-- [X] Reverse the order of answering (switch location with explanation)
-- [X] Document the different prompts used
-- [X] Finish adding overlapping locations to the sides and complete setups
-- [X] Post-process (crop) the map renders using Python's `matplotlib` library
 - [X] Incorporate thinking into the script
     - [X] Enabling thinking
     - [X] Saving thinking (thought summaries) to a `.json` file
@@ -87,6 +83,14 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-08-13 (Wednesday)
+- [X] Finish adding overlapping locations to the sides and complete setups
+- [X] Post-process (crop) the map renders using Python's `matplotlib` library
+
+### 2025-08-12 (Tuesday)
+- [X] Reverse the order of answering (switch location with explanation)
+- [X] Document the different prompts used
+
 ### 2025-08-10 (Sunday)
 - **Lesson learned**: make sure you've saved everything and at least commit before exiting your tmux session *safely*. Do not have the same instance occur in which your SSH session terminates and you can no longer save your work. Spend a few seconds and save 45 minutes' worth of hassle and stress.
 
