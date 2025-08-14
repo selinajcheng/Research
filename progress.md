@@ -7,11 +7,11 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [X] Document the different prompts used
 - [X] Finish adding overlapping locations to the sides and complete setups
 - [X] Post-process (crop) the map renders using Python's `matplotlib` library
-- [ ] Incorporate thinking into the script
-    - [ ] Enabling thinking
-    - [ ] Saving thinking (thought summaries) to a `.json` file
+- [X] Incorporate thinking into the script
+    - [X] Enabling thinking
+    - [X] Saving thinking (thought summaries) to a `.json` file
 - [ ] Implement automatic evaluation
-    - [ ] Incoporate parsing multi-line explanations
+    - [ ] Incorporate parsing multi-line explanations
 - [ ] Test with Gemini-2.5 Flash for a few calls (probably 10-15 as a final test) to make sure the script works well
 - [ ] Test with Gemini-2.5 Pro
     - [ ] Select 3 pairs with increasing and varied difficult (easy, medium, hard)
@@ -22,6 +22,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] Test 5 of the hardest cases with Gemini-2.5 Pro
 
 ### *Backburner*
+- [ ] More shading on renders?
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
 - [ ] Add overlapping locations to POV renders 7-12 (angle 210 and onwards)
 - [ ] Merge with main? When?
