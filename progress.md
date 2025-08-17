@@ -16,7 +16,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 ### *Backburner*
 - [ ] Test omitting the sentence that makes it clear that the first-person POVs can overlap, and therefore, the same numbers represent the same location and unique numbers represent different locations
 - [ ] Edit the script to test with 12 images
-
+---
 - [ ] More shading on renders?
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
 - [ ] Merge with main? When?
