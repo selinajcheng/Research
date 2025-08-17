@@ -3,24 +3,22 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-- [X] Incorporate thinking into the script
-    - [X] Enabling thinking
-    - [X] Saving thinking (thought summaries) to a `.json` file
+- [ ] Implement looping
 - [ ] Implement automatic evaluation
-    - [ ] Incorporate parsing multi-line explanations
-- [ ] Test with Gemini-2.5 Flash for a few calls (probably 10-15 as a final test) to make sure the script works well
 - [ ] Test with Gemini-2.5 Pro
     - [ ] Select 3 pairs with increasing and varied difficult (easy, medium, hard)
     - [ ] 3 pairs with dynamic thinking
     - [ ] 3 pairs without dynamic thinking (and with max budget)
-- [ ] Test omitting the sentence that makes it clear that the first-person POVs can overlap, and therefore, the same numbers represent the same location and unique numbers represent different locations
-- [ ] Edit the script to test with 12 images
-- [ ] Test 5 of the hardest cases with Gemini-2.5 Pro
+- [ ] Pause to consider refining
+- [ ] Add overlapping locations to POV renders 7-12 (angle 210 and onwards)
+- [ ] Get results for Gemini-2.5 Pro on all renders
 
 ### *Backburner*
+- [ ] Test omitting the sentence that makes it clear that the first-person POVs can overlap, and therefore, the same numbers represent the same location and unique numbers represent different locations
+- [ ] Edit the script to test with 12 images
+
 - [ ] More shading on renders?
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
-- [ ] Add overlapping locations to POV renders 7-12 (angle 210 and onwards)
 - [ ] Merge with main? When?
 - [ ] Make coordinates precise on the hypotenuse side
     - [ ] corners.py 60 deg
@@ -83,6 +81,11 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-08-14 (Thursday)
+- [X] Incorporate thinking into the script
+    - [X] Enabling thinking
+    - [X] Saving thinking (thought summaries) to a `.json` file
+
 ### 2025-08-13 (Wednesday)
 - [X] Finish adding overlapping locations to the sides and complete setups
 - [X] Post-process (crop) the map renders using Python's `matplotlib` library
