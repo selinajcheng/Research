@@ -3,23 +3,46 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-- [ ] Implement looping
-- [ ] Implement automatic evaluation
-- [ ] Test with Gemini-2.5 Pro
-    - [ ] Select 3 pairs with increasing and varied difficult (easy, medium, hard)
-    - [ ] 3 pairs with dynamic thinking
-    - [ ] 3 pairs without dynamic thinking (and with max budget)
-- [ ] Pause to consider refining
-- [ ] Add overlapping locations to POV renders 7-12 (angle 210 and onwards)
-- [ ] Get results for Gemini-2.5 Pro on all renders
+- [ ] Resolving oversight that makes multiview task experiment results invalid
+    - [ ] Change the image pairing logic for the experiments so that only valid map/object-scene questions are given
+    - [ ] Recompute results
+        - [ ] Gemini (dynamic thinking)
+        - [ ] Gemini (max budget thinking)
+        - [ ] InternLM
+- [ ] Create a Vercel app for LIL lab and family to try out the task
+    - We'll get Yoav, Zoe, Anne, Yair, Nathan, Giovanni, YiLun, 4 family, and maybe Nico, Eduardo, Fardin, Aravah, and Sadi (but not me lol)
+    - And we'll send it to Eunice
+    - [ ] Copy to new repo
+         - [ ] Delete .git file
+         - [ ] Copy to `dual-rep-app` repo and push
+    - [ ] Front-end
+        - [ ] Fix scores page
+        - [ ] User name
+        - [ ] Agreement page before starting questions
+        - [ ] Get rid of "previous" button
+        - [ ] Add instruction at the top to press the number keys to select an answer
+    - [ ] Back-end
+        - [ ] Information flow diagram
+        - [ ] Record answers
+        - [ ] Record reaction time
+        - [ ] Output `.json` files (for ourselves)
+- [ ] Ask Anne about the "baseline" Yoav was referring to
+
+## Next
+- [ ] Compute results for more VLMs
+- [ ] Hope for some interesting insight 
+- [ ] Automate labeling POV renders (using coordinates)
+- [ ] Randomize labeling POV renders (to reduce bias of choosing certain numbers)
 
 ### *Backburner*
 - [ ] Test omitting the sentence that makes it clear that the first-person POVs can overlap, and therefore, the same numbers represent the same location and unique numbers represent different locations
-- [ ] Edit the script to test with 12 images
+- [ ] Edit the script to test with all 12 images (allview task)
+- [ ] Reorganize the repo for clarity and intuitiveness
+- [ ] Fix the inaccurate `{angle}` file naming when in reality, the `{rotation_z}` should correspond to the true angle
 ---
 - [ ] More shading on renders?
 - [ ] Read "From Map Reading to Geometric Intuitions" by Dillon and Spelke 2018 in full
-- [ ] Merge with main? When?
+- [ ] Merge with main
 - [ ] Make coordinates precise on the hypotenuse side
     - [ ] corners.py 60 deg
     - [ ] corners.py 30 deg
@@ -38,6 +61,11 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
     - [ ] 2025-07-01
     - [ ] 2025-07-08
     - [ ] 2025-08-05
+    - [ ] 2025-08-19
+    - [ ] 2025-09-02
+    - [ ] 2025-09-09
+    - [ ] 2025-09-16
+    - [ ] 2025-09-23
 
 ## Notes
 - [ ] Transcribe and refine notes for the first 3 papers you read
@@ -81,6 +109,22 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-09-23 (Tuesday)
+- Realized a big oversight in experiments (some questions not having a valid answer due to target location not being visible in the given scenes)
+    - Resolved by changing the image matching logic and rerunning Gemini experiments
+- Also a good time to run InternLM experiment for the multiview task (previously with singleview task) and hopefully see the performance increase
+
+### gap in records
+- Resolved administrative/logistical process of getting research credit/capstone project for the semester
+- Started building the app
+
+### 2025-08-18 & 19 (Monday + Tuesday) (due to a semi-all-nighter done before compute cluster migrated Tuesday at 7)
+- [X] Implement looping
+- [X] Implement automatic evaluation
+- [X] Add overlapping locations to POV renders 7-12 (angle 210 and onwards)
+- [X] Test with and without dynamic thinking on Gemini-2.5 Pro
+- [X] Write standup slide for tomorrow
+
 ### 2025-08-14 (Thursday)
 - [X] Incorporate thinking into the script
     - [X] Enabling thinking
@@ -95,7 +139,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [X] Document the different prompts used
 
 ### 2025-08-10 (Sunday)
-- **Lesson learned**: make sure you've saved everything and at least commit before exiting your tmux session *safely*. Do not have the same instance occur in which your SSH session terminates and you can no longer save your work. Spend a few seconds and save 45 minutes' worth of hassle and stress.
+- **Lesson learned**: make sure you've saved everything and at least commit before exiting your tmux session *safely*. Do not have the same instance occur in which your SSH session terminates and you can no longer save your work. Spend a few seconds and save 45 minutes' worth of hassle and stress (hmm... oddly specific 🤔).
 
 ### 2025-08-07 (Thursday)
 - **To be kept in mind for the future if doing human studies**: Need to account for the possibility of simply "getting better at the game" through familiarity.
