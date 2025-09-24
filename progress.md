@@ -3,10 +3,9 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-- [ ] Make figures for new results
-- [ ] Analyze/think about results
-- [ ] Create a Vercel app for LIL lab and family to try out the task
-    - We'll get Yoav, Zoe, Anne, Yair, Nathan, Giovanni, YiLun, 4 family, and maybe Nico, Eduardo, Fardin, Aravah, and Sadi (but not me lol)
+- [X] Make figures for new results
+- [ ] Create a Vercel app for LIL lab and family to try out the task and give us an informal human baseline
+    - We'll get Yoav, Zoe, Anne, Yair, Nathan, Giovanni, YiLun, 4 family, and maybe Nico, Eduardo, Fardin, Aravah, and Sadi
     - And we'll send it to Eunice
     - [ ] Copy to new repo
          - [ ] Delete .git file
@@ -23,18 +22,29 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
         - [ ] Record answers
         - [ ] Record reaction time
         - [ ] Output `.json` files (for ourselves)
-    - [ ] Check wireframe to ensure nothing's missing
-- [ ] Ask Anne about the "baseline" Yoav was referring to
+    - [ ] Check wireframe to ensure nothing big's missing
+    - [ ] Deploy the app online so we can test it
+    - [ ] Test that selections are well-recorded
+    - [ ] Change the configuration of the task so that there are the same number of triplets tested for each target/object
 
-## Next
+## Next on the queue
+- [ ] Write research statement draft
+- [ ] Write CV
+- [ ] Send to Anne
+- [ ] Send Yoav a considerate request on Friday, also mentioning the app's ready
+- [ ] Analyze/think about results
+- [ ] Calculate the random baseline for each target/object (since each object has a different number of triplets and each scene in the triplet may have a different number of choices)
+    - You'll want to give the model the necessary data (how many choices per scene) and ask it to calculate the baseline and a formula.
+- [ ] Debug InternLM script 
+    - [ ] Change to `num_gpu=1`
+    - [ ] Some debugging
 - [ ] Compute results for more VLMs
     - [ ] Look to papers for which should be next
     - [ ] Ask AI what should be next
     - [ ] Ask Anne which ones would be good
-- [ ] Hope for some interesting insight 
-- [ ] Automate labeling POV renders (using coordinates)
-- [ ] Randomize labeling POV renders (to reduce bias of choosing certain numbers)
-- [ ] Learn more thoroughly how to make figures (from Claude?)
+    - Hope for some interesting insight 
+- [ ] Automate and randomize (to reduce bias of choosing certain numbers) labeling POV renders (using coordinates or something equally intuitive)
+- [ ] Learn more thoroughly how to make better figures (from Claude?) and explore different styles, especially for research
 
 ### *Backburner*
 - [ ] Test omitting the sentence that makes it clear that the first-person POVs can overlap, and therefore, the same numbers represent the same location and unique numbers represent different locations
@@ -81,6 +91,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 
 ## Learning (on the side)
 - [ ] Learn neovim
+- [ ] More thoroughly learn statistics, especially whatever details concepts typically found in research, including random baselines.
 
 ### Watching
 - [ ] Rewatch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
@@ -113,6 +124,14 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-09-24 (Wednesday)
+- [X] Ask Anne about the "baseline" Yoav was referring to
+    - The random baseline gives you:
+        a. An understanding of how much better the performance is than random.
+            - This is the same logic as getting a human baseline to see how much better (or worse) a model performs
+            - Raw data on its own without a baseline is less meaningful
+        b. An estimation of how difficult the task is
+
 ### 2025-09-23 (Tuesday)
 - Realized a big oversight in experiments (some questions not having a valid answer due to target location not being visible in the given scenes)
     - Resolved by changing the image matching logic and rerunning Gemini experiments
@@ -122,8 +141,12 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
     - [X] Recompute results
         - [X] Gemini (dynamic thinking)
         - [X] Gemini (max budget thinking)
-        - [X] InternLM
+        - [-] InternLM
 - Will be checking results tomorrow.
+- **Lesson 2**: When asking a model something, these are good guidelines to follow:
+    1. Give the model the data it needs.
+    2. Give the model explicit specifications as to what you want.
+    3. Provide an example desired result or outcome.
 
 ### gap in records
 - Resolved administrative/logistical process of getting research credit/capstone project for the semester
