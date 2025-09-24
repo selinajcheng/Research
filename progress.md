@@ -3,12 +3,8 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-- [ ] Resolving oversight that makes multiview task experiment results invalid
-    - [ ] Change the image pairing logic for the experiments so that only valid map/object-scene questions are given
-    - [ ] Recompute results
-        - [ ] Gemini (dynamic thinking)
-        - [ ] Gemini (max budget thinking)
-        - [ ] InternLM
+- [ ] Make figures for new results
+- [ ] Analyze/think about results
 - [ ] Create a Vercel app for LIL lab and family to try out the task
     - We'll get Yoav, Zoe, Anne, Yair, Nathan, Giovanni, YiLun, 4 family, and maybe Nico, Eduardo, Fardin, Aravah, and Sadi (but not me lol)
     - And we'll send it to Eunice
@@ -30,9 +26,13 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 
 ## Next
 - [ ] Compute results for more VLMs
+    - [ ] Look to papers for which should be next
+    - [ ] Ask AI what should be next
+    - [ ] Ask Anne which ones would be good
 - [ ] Hope for some interesting insight 
 - [ ] Automate labeling POV renders (using coordinates)
 - [ ] Randomize labeling POV renders (to reduce bias of choosing certain numbers)
+- [ ] Learn more thoroughly how to make figures (from Claude?)
 
 ### *Backburner*
 - [ ] Test omitting the sentence that makes it clear that the first-person POVs can overlap, and therefore, the same numbers represent the same location and unique numbers represent different locations
@@ -113,6 +113,13 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - Realized a big oversight in experiments (some questions not having a valid answer due to target location not being visible in the given scenes)
     - Resolved by changing the image matching logic and rerunning Gemini experiments
 - Also a good time to run InternLM experiment for the multiview task (previously with singleview task) and hopefully see the performance increase
+- [X] Resolving oversight that makes multiview task experiment results invalid
+    - [X] Change the image pairing logic for the experiments so that only valid map/object-scene questions are given
+    - [X] Recompute results
+        - [X] Gemini (dynamic thinking)
+        - [X] Gemini (max budget thinking)
+        - [X] InternLM
+- Will be checking results tomorrow.
 
 ### gap in records
 - Resolved administrative/logistical process of getting research credit/capstone project for the semester
