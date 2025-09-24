@@ -23,6 +23,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
         - [ ] Record answers
         - [ ] Record reaction time
         - [ ] Output `.json` files (for ourselves)
+    - [ ] Check wireframe to ensure nothing's missing
 - [ ] Ask Anne about the "baseline" Yoav was referring to
 
 ## Next
@@ -79,6 +80,8 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] Get [ChatGPT Plus discount for students](https://help.openai.com/en/articles/10968654-student-discounts-for-chatgpt-plus-us-canada)
 
 ## Learning (on the side)
+- [ ] Learn neovim
+
 ### Watching
 - [ ] Rewatch Andrew Ng's lecture: [Stanford CS230: Deep Learning | Autumn 2018 | Lecture 8 - Career Advice / Reading Research Papers - YouTube](https://www.youtube.com/watch?v=733m6qBH-jI) (1 hr)
 - [ ] Finish Andrej Karpathy's [Deep Dive into LLMs like ChatGPT - YouTube](https://www.youtube.com/watch?v=7xTGNNLPyMI) (3.5 hr)
