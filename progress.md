@@ -17,6 +17,7 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
         - [ ] Agreement page before starting questions
         - [ ] Get rid of "previous" button
         - [ ] Add instruction at the top to press the number keys to select an answer
+        - [ ] Fix selecting `11`
     - [ ] Back-end
         - [ ] Information flow diagram
         - [ ] Record answers
@@ -284,3 +285,4 @@ Instead of AI, I ended up learning much of this through [Geometry, colors and ma
 ### Unknown
 
 - [X] Number the notebook
+
