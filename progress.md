@@ -7,25 +7,42 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] Create a Vercel app for LIL lab and family to try out the task and give us an informal human baseline
     - We'll get Yoav, Zoe, Anne, Yair, Nathan, Giovanni, YiLun, 4 family, and maybe Nico, Eduardo, Fardin, Aravah, and Sadi
     - And we'll send it to Eunice
-    - [ ] Copy to new repo
-         - [ ] Delete .git file
-         - [ ] Copy to `dual-rep-app` repo and push
-    - [ ] Front-end
-        - [ ] Fix scores page
-        - [ ] User name
-        - [ ] Agreement page before starting questions
-        - [ ] Get rid of "previous" button
-        - [ ] Add instruction at the top to press the number keys to select an answer
-        - [ ] Fix selecting `11`
+    - [X] Copy to new repo
+         - [X] Delete .git file
+         - [X] Copy to `dual-rep-app` repo and push
+    - [X] Front-end
+        - [X] Fix scores page
+        - [X] User name
+        - [X] Agreement page before starting questions
+        - [X] Get rid of "previous" button
+        - [X] Add instruction at the top to press the number keys to select an answer
+        - [X] Fix selecting `11`
+        - [X] Show the question only once on the scores page (at the top before all incorrect answers)
+        - [X] Add ability to enlarge images
+    - [X] Check wireframe to ensure nothing big's missing
+    - [ ] Adjust the questions so there's one per setup+object (18) (we can test all features using this as a base)
     - [ ] Back-end
-        - [ ] Information flow diagram
         - [ ] Record answers
-        - [ ] Record reaction time
-        - [ ] Output `.json` files (for ourselves)
-    - [ ] Check wireframe to ensure nothing big's missing
+        - [ ] Record (reaction) time
+        - [ ] Save a `.json` file per user (for ourselves)
+            - Reaction time for each question
+            - Correct boolean value for each question
+            - Average time per question
+            - Total Correct
+        - [ ] Automatic evaluation to a saved `.csv` file of results per user
+        - [ ] Using `.csv`, create an interactive (can hover) bar graph using some sort of library
+            - [ ] Display bar graph
+            - [ ] Display average reaction time
     - [ ] Deploy the app online so we can test it
     - [ ] Test that selections are well-recorded
+    - [ ] Edit agreement
+        - Your reaction time/time spent per question will be recorded
+        - Your answers will be stored for research purposes
+    - [ ] Edit quiz description
+        - There will be {x} questions.
+        - Time estimate
     - [ ] Change the configuration of the task so that there are the same number of triplets tested for each target/object
+        - Is this to be done *before* piloting?
 
 ## Next on the queue
 - [ ] Write research statement draft
