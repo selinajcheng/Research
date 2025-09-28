@@ -30,19 +30,20 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
             - Average time per question
             - Total Correct
         - [ ] Automatic evaluation to a saved `.csv` file of results per user
+        - [ ] Deploy the app online so we can test it
+        - [ ] Test that selections are well-recorded
         - [ ] Using `.csv`, create an interactive (can hover) bar graph using some sort of library
             - [ ] Display bar graph
-            - [ ] Display average reaction time
-    - [ ] Deploy the app online so we can test it
-    - [ ] Test that selections are well-recorded
-    - [ ] Edit agreement
-        - Your reaction time/time spent per question will be recorded
-        - Your answers will be stored for research purposes
-    - [ ] Edit quiz description
-        - There will be {x} questions.
-        - Time estimate
+        - [ ] Display average reaction time
     - [ ] Change the configuration of the task so that there are the same number of triplets tested for each target/object
-        - Is this to be done *before* piloting?
+        - Is this to be done *before* we go ahead with the pilot?
+    - [ ] Placeholder edits
+        - [ ] Edit agreement
+            - Your reaction time/time spent per question will be recorded
+            - Your answers will be stored for research purposes
+        - [ ] Edit quiz description
+            - There will be {#} questions.
+            - Time estimated to go through whole quiz
 
 ## Next on the queue
 - [ ] Write research statement draft
