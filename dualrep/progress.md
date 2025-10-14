@@ -3,53 +3,45 @@
 I'm keeping track of tasks here. See the archive/progress section for a play-by-play of what I've done so far.
 
 ## Now (check this everyday)
-- [X] Make figures for new results
-- [ ] Create a Vercel app for LIL lab and family to try out the task and give us an informal human baseline
-    - We'll get Yoav, Zoe, Anne, Yair, Nathan, Giovanni, YiLun, 4 family, and maybe Nico, Eduardo, Fardin, Aravah, and Sadi
-    - And we'll send it to Eunice
-    - [X] Copy to new repo
-         - [X] Delete .git file
-         - [X] Copy to `dual-rep-app` repo and push
-    - [X] Front-end
-        - [X] Fix scores page
-        - [X] User name
-        - [X] Agreement page before starting questions
-        - [X] Get rid of "previous" button
-        - [X] Add instruction at the top to press the number keys to select an answer
-        - [X] Fix selecting `11`
-        - [X] Show the question only once on the scores page (at the top before all incorrect answers)
-        - [X] Add ability to enlarge images
-    - [X] Check wireframe to ensure nothing big's missing
-    - [ ] Adjust the questions so there's one per setup+object (18) (we can test all features using this as a base)
-    - [ ] Back-end
-        - [ ] Record answers
-        - [ ] Record (reaction) time
-        - [ ] Save a `.json` file per user (for ourselves)
-            - Reaction time for each question
-            - Correct boolean value for each question
-            - Average time per question
-            - Total Correct
-        - [ ] Automatic evaluation to a saved `.csv` file of results per user
-        - [ ] Deploy the app online so we can test it
-        - [ ] Test that selections are well-recorded
-        - [ ] Using `.csv`, create an interactive (can hover) bar graph using some sort of library
-            - [ ] Display bar graph
-        - [ ] Display average reaction time
-    - [ ] Change the configuration of the task so that there are the same number of triplets tested for each target/object
-        - Is this to be done *before* we go ahead with the pilot?
+- [ ] Fix the configuration for a uniform random baseline
+    - [ ] Change the render configuration to get the same number of triplets per object/target location
+        - *Idea*: Use hyperparameters for the camera, setting the height and angle to be the same, but move camera along 3 axes connecting from 30-60-90 angles to their opposite sides.
+    - [ ] Add and randomize the numbers per triplet
+    - [ ] Re-render
+- [ ] Edit the app
+    - [ ] Make sure that for each question, only relevant choices are shown (mitigated if we randomize numbers per triplet so they'd all have, e.g., only choices 1-4)
+    - [ ] Create a trivial demo/example task to acclimate users
+    - [ ] Add labels for each image from 1-4
+    - [ ] Explicitly explain/map keyboard shortcuts to numbers
+    - [ ] 提醒 users that the task/prompt is the same across settings
     - [ ] Placeholder edits
         - [ ] Edit agreement
-            - Your reaction time/time spent per question will be recorded
+            - Your reaction time/time spent per question will be recorded, so please prepare to do this in one sitting
             - Your answers will be stored for research purposes
         - [ ] Edit quiz description
             - There will be {#} questions.
             - Time estimated to go through whole quiz
+- [ ] Start the pilot
+- [ ] Organize the repo's:
+    - [ ] Data
+        - [ ] Place the data under `renders/`
+        - [ ] Create folders for both `Overlapping`/`Multi-View` and `Single-View`
+    - [ ] Experiments
+        - [ ] Create a new folder for it
+        - [ ] Create `experiments/prompts.py` with variables that you can import in scripts
+        - [ ] Create sub-folder `experiments/models` with scripts for each model
+            - [ ] **Ask Anne** for clarification on how the "hyperparameters" should be organized? More modular, so a separate file from the main script to call?
+        - [ ] Create a sub-folder for each experiment
+            - [ ] Create a `README.md` including all the steps to run each experiment
+            - [ ] Create a sub-folder for results
+- [ ] Create a script to produce visualizations
+- [ ] Re-run the baseline with models
+    - [ ] Gemini-2.5 Pro
+        - [ ] Dynamic thinking
+        - [ ] Max budget thinking
+    - [ ] InternLM
 
 ## Next on the queue
-- [ ] Write research statement draft
-- [ ] Write CV
-- [ ] Send to Anne
-- [ ] Send Yoav a considerate request on Friday, also mentioning the app's ready
 - [ ] Analyze/think about results
 - [ ] Calculate the random baseline for each target/object (since each object has a different number of triplets and each scene in the triplet may have a different number of choices)
     - You'll want to give the model the necessary data (how many choices per scene) and ask it to calculate the baseline and a formula.
@@ -142,6 +134,44 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### done before 2025-10-06 (Monday)
+- [X] Write research statement
+- [X] Write CV
+- [X] Send to Anne
+
+### 2025-09-30 (Tuesday)
+- [X] Make figures for new results
+- [X] Create a Vercel app for LIL lab and family to try out the task and give us an informal human baseline
+    - We'll get Yoav, Zoe, Anne, Yair, Nathan, Giovanni, YiLun, 4 family, and maybe Nico, Eduardo, Fardin, Aravah, and Sadi
+    - And we'll send it to Eunice
+    - [X] Copy to new repo
+         - [X] Delete .git file
+         - [X] Copy to `dual-rep-app` repo and push
+    - [X] Front-end
+        - [X] Fix scores page
+        - [X] User name
+        - [X] Agreement page before starting questions
+        - [X] Get rid of "previous" button
+        - [X] Add instruction at the top to press the number keys to select an answer
+        - [X] Fix selecting `11`
+        - [X] Show the question only once on the scores page (at the top before all incorrect answers)
+        - [X] Add ability to enlarge images
+    - [X] Check wireframe to ensure nothing big's missing
+    - [X] Back-end
+        - [X] Record answers
+        - [X] Record (reaction) time
+        - [ ] Save a `.json` file per user (for ourselves)
+            - Reaction time for each question
+            - Correct boolean value for each question
+            - Average time per question
+            - Total Correct
+        - [ ] Automatic evaluation to a saved `.csv` file of results per user
+        - [X] Deploy the app online so we can test it
+        - [X] Test that selections are well-recorded
+        - [ ] Using `.csv`, create an interactive (can hover) bar graph using some sort of library
+            - [ ] Display bar graph
+        - [ ] Display average reaction time
+
 ### 2025-09-24 (Wednesday)
 - [X] Ask Anne about the "baseline" Yoav was referring to
     - The random baseline gives you:
