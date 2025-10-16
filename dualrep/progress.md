@@ -5,8 +5,9 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 ## Now (check this everyday)
 - [ ] Fix the configuration for a uniform random baseline
     - [ ] Change the render configuration to get the same number of triplets per object/target location
-        - *Idea*: Use hyperparameters for the camera, setting the height and angle to be the same, but move camera along 3 axes connecting from 30-60-90 angles to their opposite sides.
-    - [ ] Add and randomize the numbers per triplet
+        - *Idea*: Use hyperparameters for the camera, setting the height and angle of the camera to be constants, but move camera along 3 axes connecting from 30-60-90 angles to their opposite sides.
+    - [X] Add numbers
+    - [ ] Randomize the numbers per triplet
     - [ ] Re-render
 - [ ] Edit the app
     - [ ] Make sure that for each question, only relevant choices are shown (mitigated if we randomize numbers per triplet so they'd all have, e.g., only choices 1-4)
