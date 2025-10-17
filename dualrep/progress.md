@@ -5,9 +5,19 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 ## Now (check this everyday)
 - [ ] Fix the configuration for a uniform random baseline
     - [ ] Change the render configuration to get the same number of triplets per object/target location
-        - *Idea*: Use hyperparameters for the camera, setting the height and angle of the camera to be constants, but move camera along 3 axes connecting from 30-60-90 angles to their opposite sides.
+        - *Idea*: Instead of barycenter, use incenter.
+        - [X] Calculate incenter x- and y-coordinates using the incenter formula
+        - [X] Adjust phi and horizontal viewfield to 90 by using `camera.data.angle_x` and converting from radians to degrees (`180*angle/pi`)
+        - [X] Verify phi/delta = 90/30 = 6
+        - [ ] Verify that each target appears `k` times across all renders
     - [X] Add numbers
+    - [X] Change number color to yellow
+    - [X] Change font
+    - [ ] Fix the 4 (make numbers face the direct opposite of the camera's *viewing direction*, not the location itself.)
+    - [ ] Add logic to add numbers starting from 1 per triplet
     - [ ] Randomize the numbers per triplet
+    - [ ] Add more choices
+        - [ ] Try halfway along the side between each target first (we'll check for it showing up `c` or `k` times and if it doesn't, explore alternatives or no additional choices)
     - [ ] Re-render
 - [ ] Edit the app
     - [ ] Make sure that for each question, only relevant choices are shown (mitigated if we randomize numbers per triplet so they'd all have, e.g., only choices 1-4)
@@ -22,6 +32,11 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
         - [ ] Edit quiz description
             - There will be {#} questions.
             - Time estimated to go through whole quiz
+- [ ] Re-run the baseline with models
+    - [ ] Gemini-2.5 Pro
+        - [ ] Dynamic thinking
+        - [ ] Max budget thinking
+    - [ ] InternLM
 - [ ] Start the pilot
 - [ ] Organize the repo's:
     - [ ] Data
@@ -35,14 +50,9 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
         - [ ] Create a sub-folder for each experiment
             - [ ] Create a `README.md` including all the steps to run each experiment
             - [ ] Create a sub-folder for results
-- [ ] Create a script to produce visualizations
-- [ ] Re-run the baseline with models
-    - [ ] Gemini-2.5 Pro
-        - [ ] Dynamic thinking
-        - [ ] Max budget thinking
-    - [ ] InternLM
 
 ## Next on the queue
+- [ ] Create a script to produce visualizations
 - [ ] Analyze/think about results
 - [ ] Calculate the random baseline for each target/object (since each object has a different number of triplets and each scene in the triplet may have a different number of choices)
     - You'll want to give the model the necessary data (how many choices per scene) and ask it to calculate the baseline and a formula.
@@ -135,6 +145,8 @@ I'm keeping track of tasks here. See the archive/progress section for a play-by-
 - [ ] [Computer science series](https://www.3blue1brown.com/topics/computer-science)
 
 ## Task Archive and Progress (shelved by dates done; reverse-chronological)
+### 2025-10-15 to 
+
 ### done before 2025-10-06 (Monday)
 - [X] Write research statement
 - [X] Write CV
